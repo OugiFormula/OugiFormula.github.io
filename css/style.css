@@ -145,6 +145,38 @@ li {
   z-index: 11;
 }
 
+#credits {
+  height: 394px;
+  width: 592px;
+  background-image: url("../images/assets-credits.png");
+  margin-top: 40px;
+  left: 68%;
+  position: absolute;
+  padding-top: 67px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box; /* stops padding from adding to width */
+  text-align: center;
+  font-size: 20px;
+  z-index: 11;
+}
+
+#paint-box {
+  height: 600px;
+  width: 780px;
+  background-image: url("../images/assets-paint.png");
+  margin-top: 40px;
+  left: 20%;
+  position: absolute;
+  padding-top: 67px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box; /* stops padding from adding to width */
+  text-align: center;
+  font-size: 20px;
+  z-index: 11;
+}
+
 #fumo-box{
   height: 334px;
   width: 296px;
@@ -192,7 +224,7 @@ li {
   margin-top: 224px;
   left: 20%;
   position: absolute;
-  z-index: 15;
+  z-index: 0;
   padding-top: 55px;
   padding-left: 20px;
   padding-right: 20px;
@@ -217,8 +249,8 @@ li {
   height: 296px;
   width: 196px;
   background-image: url("../images/assets-cirno-box.png");
-  margin-top: 300px;
-  left: 13%;
+  margin-top: 225px;
+  left: 10%;
   position: absolute;
   z-index: 8;
 }
@@ -240,6 +272,28 @@ li {
   width: 456px;
   margin-top: 46px;
   margin-left: 10px;
+  position: relative;
+  z-index: 7;
+}
+
+#credits-div{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 294px;
+  width: 562px;
+  margin-top: 3px;
+  margin-left: 0px;
+  position: relative;
+  z-index: 7;
+}
+
+#paint-div{
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 480px;
+  width: 738px;
+  margin-top: 3px;
+  margin-left: 0px;
   position: relative;
   z-index: 7;
 }
