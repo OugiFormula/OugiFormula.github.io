@@ -1,31 +1,122 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Yukio Koito</title>
-        <link rel="icon" href="/logo.ping" type="image/png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-        <link href="style.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <div class="social-links">
-            <a id="nav" href="https://www.twitch.tv/yukiokoito"><i class="fab fa-twitch"></i></a>
-            <a id="nav" href="https://www.youtube.com/channel/UC0R_wz6W8u1eH40DesG4cng"><i class="fab fa-youtube"></i></a>
-            <a id="nav" href="https://twitter.com/YukioKoito"><i class="fab fa-twitter"></i></a>
-            <a id="nav" href="https://github.com/OugiFormula"><i class="fab fa-github"></i></a>
-            <a id="nav" href="https://discord.gg/kXwKpsKuCB"><i class="fab fa-discord"></i></a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1720, initial-scale=1.0, minimum-scale=0.465">
+    <title>YukiOS</title>
+    <script src="https://h3.neocities.org/autoplay_enable.js"></script>
+    
+    <meta content="YukiOS 98" property="og:title" />
+    <meta content="Yukio Koito Funny Website!" property="og:description" />
+    <meta content="https://yukiokoito.neocities.org/" property="og:url" />
+    <meta content="https://i.imgur.com/X4YPpx8.gif" property="og:image" />
+    <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    
+    <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      m = checkTime(m);
+      document.getElementById('txt').innerHTML =
+      h + ":" + m;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    function audioVol(){
+      var audio = document.getElementById("musicPlayer");
+      audio.volume = 0.1;
+      }
+    </script>
+  </head>
+  
+  <body onload="startTime(); audioVol();">
+    <audio preload="auto" loop autoplay id="musicPlayer" src="https://dl.dropbox.com/s/ti8ahia080vl1e7/playlist.mp3"></audio>
+    <div id="welcome">
+        <h1></h1><p>
+        <br>
+        </p><div class="welcome-text">
+          <a href="index.html"><img src="images/assets-title-gif.gif" title="Home"> </a>
         </div>
-        <img id="logo-theme" src="logo.png">
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <address>
-                <a href="mailto:contact@yukiokoito.club">Contact</a>
-            </address>
+    </div>
+    
+    
+    <div class="itemIconContainer">
+      <div class="itemIcon">
+        <a href="index.html"><img src="images/assets-home.png" title="~ Home ~"> </a>
+      </div>
+      <div class="itemIcon">
+        <a href="https://discord.com/invite/kXwKpsKuCB"><img src="images/assets-discord.png" title="Discord"> </a>
+      </div>
+      <div class="itemIcon">
+        <a href=""><img src="images/assets-email.png" title="my cool email"> </a>
+      </div>
+      <div class="itemIcon">
+        <a href="https://www.twitch.tv/yukiokoito"><img src="images/assets-twitch.png" title="twitch channel"> </a>
+      </div>
+    </div>
+    
+    
+    <div id="links">
+      <h0>&#10028; <a href="" onmousedown="alert('Work In Progress!\n\nThank you for checking my website.')"  >My Profile</a> &#10028;</h0>
+      <br>
+      <br>
+      <h0>&#10034;  &#730; . <a href="https://twitter.com/YukioKoito">Twitter</a> . &#730;  &#10034;</h0>
+      <br>
+      <br>
+      <h0> &#8902; &#10023; .  &#8889; <a href="https://discord.com/invite/kXwKpsKuCB">My Discord Server</a> &#8889;  . &#10023; &#8902; </h0>
+      <br>
+      <br>
+      <h0>&#9733; &#65290; &#730; &#8902; . <a href="https://www.twitch.tv/yukiokoito">My Twitch</a> . &#8902; &#730; &#65290; &#9733;</h0>
+      <br>
+      <br>
+      <h0>&#11090;     .  &#8889; &#9734;     &#11089;   . &#10022; <a></a> &#10022; .   &#11089;     &#9734; &#8889;  .    &#11090;</h0>
+    </div>
+    <div id="fumo-box">
+      <div id="fumo">
+      </div>
+    </div>
+    <div id="araragi-box">
+      <div id="araragi">
+      </div>
+    </div>
+    
+    <div id="cirno-box">
+      <div id="cirno">
+      </div>
+    </div>
+    
+    <div id="mew-box">
+      <div id="mew-div">
+        <div id="mew">
         </div>
-        <article>
-            <h1 style="letter-spacing: 0.41667em;">Code/Content Creation/Graphic Design</h1>
-        </article>
-    </body>
+      </div>
+    </div>
+    
+    <div id="nadeko-box">
+      <div id="nadeko">
+        <img src="images/assets-nadeko.gif" width="400">
+      </div>
+    </div>
+    
+    <div id="computer-2-box">
+      <div id="computer-2">
+      </div>
+    </div>
+
+  <div id="txt">
+  </div>
+  <div id="footer">
+    <img src="images/assets-bottombar.png">
+  </div>
+  <div id="footer-right">
+    
+  </div>
+    
+  </body>
+  
 </html>
