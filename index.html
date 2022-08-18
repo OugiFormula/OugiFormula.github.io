@@ -5,36 +5,17 @@
     <meta name="viewport" content="width=1920, height=1720, initial-scale=1.0, minimum-scale=0.465">
     <title>YukiOS</title>
     <script src="https://h3.neocities.org/autoplay_enable.js"></script>
-    
+    <script src="js/script.js"></script>
+
     <meta content="YukiOS 98" property="og:title" />
     <meta content="Yukio Koito Funny Website!" property="og:description" />
     <meta content="https://yukiokoito.neocities.org/" property="og:url" />
     <meta content="https://i.imgur.com/X4YPpx8.gif" property="og:image" />
     <meta content="#43B581" data-react-helmet="true" name="theme-color" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-    
-    <script>
-    function startTime() {
-      var today = new Date();
-      var h = today.getHours();
-      var m = today.getMinutes();
-      m = checkTime(m);
-      document.getElementById('txt').innerHTML =
-      h + ":" + m;
-      var t = setTimeout(startTime, 500);
-    }
-    function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-      return i;
-    }
-    function audioVol(){
-      var audio = document.getElementById("musicPlayer");
-      audio.volume = 0.1;
-      }
-    </script>
   </head>
   
-  <body onload="audioVol(); startTime();">
+  <body onload="startTime();">
     <audio preload="auto" loop autoplay id="musicPlayer" src="https://dl.dropbox.com/s/ti8ahia080vl1e7/playlist.mp3"></audio>
     <div id="welcome">
         <h1></h1><p>
@@ -53,10 +34,16 @@
         <a href="https://discord.com/invite/kXwKpsKuCB"><img src="images/assets-discord.png" title="Discord"> </a>
       </div>
       <div class="itemIcon">
-        <a href=""><img src="images/assets-email.png" title="my cool email"> </a>
+        <a href="mailto:yukio@omg.lol"><img src="images/assets-email.png" title="my cool email"> </a>
       </div>
       <div class="itemIcon">
         <a href="https://www.twitch.tv/yukiokoito"><img src="images/assets-twitch.png" title="twitch channel"> </a>
+      </div>
+      <div class="itemIcon">
+        <a href="credits.html"><img src="images/assets-credits-icon.png" title="credits.txt"> </a>
+      </div>
+      <div class="itemIcon">
+        <a onclick="audioController()"><img src="images/assets-music.png" title="Turn Music On or Off"> </a>
       </div>
     </div>
     
