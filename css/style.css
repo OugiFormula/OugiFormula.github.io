@@ -190,9 +190,9 @@ li {
   width: 592px;
   background-image: url("../images/assets-status.png");
   margin-top: 224px;
-  left: 25%;
+  left: 20%;
   position: absolute;
-  z-index: 1;
+  z-index: 15;
   padding-top: 55px;
   padding-left: 20px;
   padding-right: 20px;
